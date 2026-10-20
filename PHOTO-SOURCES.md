@@ -1,0 +1,12 @@
+# Photo sources for additional destination cards
+
+The primary images for Mount Pulag, Batanes, Isla Gigantes, Chefchaouen, Vatican City, and Tromsø were already present in the uploaded project.
+
+- **Tawi-Tawi:** NASA Earth Observatory, “Island Hopping in Tawi-Tawi” (NASA image by Joshua Stevens using Landsat data from USGS). Public-domain NASA image. https://science.nasa.gov/earth/earth-observatory/island-hopping-in-tawi-tawi-149738/
+- **Palawan:** Bernd Dittrich, “Island scenery with ocean and cloudy blue sky,” Unsplash License. https://unsplash.com/photos/island-scenery-with-ocean-and-cloudy-blue-sky-S3T26BSyXok
+- **Boracay:** Vic Alcuaz, “A beach with palm trees and people walking on it,” White Beach, Boracay Island; Unsplash License. https://unsplash.com/photos/a-beach-with-palm-trees-and-people-walking-on-it-XF8rGA0cMts
+- **France:** Melissa McGovern, “The Eiffel Tower in Paris, France,” Unsplash License. https://unsplash.com/photos/the-eiffel-tower-in-paris-france-rFFFbCdWOy0
+- **Japan:** Nathan Guan, “Traditional Japanese street with a pagoda in the distance,” Kyoto; Unsplash License. https://unsplash.com/photos/traditional-japanese-street-with-a-pagoda-in-the-distance-QY6tPF008pY
+- **South Korea:** Lee Seunghyub, “A Seoul, South Korea landmark in a park,” Unsplash License. https://unsplash.com/photos/a-seoul-south-korea-landmark-in-a-park-XgnTPliFFxw
+
+Please verify the source and license before commercial or other public uses, and retain this file with the project.

@@ -1,0 +1,3067 @@
+<!-- MAIN PAGE NOTE: full ElseWhere landing page with destination cards, guide sections, feedback, contact details, and team information. -->
+<!-- This file opens the ElseWhere website. -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>ElseWhere | Discover Somewhere Else</title>
+    <link href="../CSS/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../CSS/device-viewer.css" />
+  </head>
+  <body>
+    <a href="#home" class="skip-link">Skip to main content</a>
+    <!-- HEADER / NAVIGATION NOTE: site logo, primary section links, destination dropdown, and destination search. -->
+    <header class="header">
+      <a class="brand" href="#home">
+        <img alt="ElseWhere Logo" src="../image3/logo.png" />
+        <span> ElseWhere </span>
+      </a>
+      <nav>
+        <a href="#home"> Home </a>
+        <div class="dropdown">
+          <a href="#local"> Destinations ▾ </a>
+          <div class="dropdown-content">
+            <a href="#local"> Local </a>
+            <a href="#international"> International </a>
+          </div>
+        </div>
+        <a href="#travel-guide"> Travel Guide </a>
+        <a href="#gallery"> Gallery </a>
+        <a class="feedback-nav-link" href="#feedback">Feedback</a>
+        <a href="#about"> About Us </a>
+        <a href="#team"> Our Team </a>
+        <button
+          class="search"
+          type="button"
+          onclick="openDestinationSearch()"
+          aria-label="Search destinations"
+          title="Search destinations"
+        >
+          ⌕
+        </button>
+      </nav>
+    </header>
+
+    <!-- HOME HERO NOTE: introduces ElseWhere and shows the autoplaying, muted destination preview video. -->
+    <main class="home" id="home">
+      <section class="home-hero">
+        <div class="home-overlay">
+          <div class="home-hero-layout">
+            <div class="home-text">
+              <p class="small-title">DISCOVER</p>
+              <h1>Somewhere Else</h1>
+              <p class="home-description">
+                Explore beautiful destinations, discover new experiences, and
+                find places worth discovering.
+              </p>
+              <div class="home-buttons">
+                <a class="explore-btn" href="#local"
+                  >EXPLORE LOCAL <span aria-hidden="true">↗</span></a
+                >
+                <a class="explore-btn explore-btn-outline" href="#international"
+                  >EXPLORE INTERNATIONAL <span aria-hidden="true">↗</span></a
+                >
+              </div>
+            </div>
+            <div class="home-video-frame">
+              <video
+                controls
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="auto"
+                poster="../image3/background2.jpg"
+                aria-label="ElseWhere destination film"
+              >
+                <source src="../image3/travel-preview.mp4" type="video/mp4" />
+                Your browser does not support the video element.
+              </video>
+              <span class="video-label"
+                ><span class="video-label-dot"></span> A little inspiration for
+                your next journey</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- LOCAL DESTINATIONS NOTE: section banner for destinations within the Philippines. -->
+    <section class="destination-hero local-hero" id="local">
+      <div class="destination-overlay">
+        <h1>Local Destinations</h1>
+        <p>
+          Discover the beauty of the Philippines, from its pristine beaches to
+          majestic mountains.
+        </p>
+      </div>
+    </section>
+    <main class="destination-content" id="local-content">
+      <div class="destination-section-heading">
+        <p class="section-eyebrow">ISLANDS, MOUNTAINS & COASTLINES</p>
+        <h2>Find your next Philippine escape</h2>
+        <p>
+          From quiet coastal corners to highland trails, choose the kind of trip
+          you want to remember.
+        </p>
+      </div>
+      <div class="destination-grid">
+        <a
+          class="destination-card"
+          href="pulag.html"
+          aria-label="Explore Mount Pulag, Benguet, Philippines"
+        >
+          <div class="card-image">
+            <img
+              src="../image3/pulag.jpg"
+              alt="Mount Pulag — Benguet, Philippines"
+              loading="lazy"
+              decoding="async"
+            />
+            <span class="card-category">Mountains &amp; nature</span>
+            <span class="card-arrow" aria-hidden="true">↗</span>
+            <span class="card-image-caption">Discover somewhere different</span>
+          </div>
+          <div class="card-content">
+            <p class="card-eyebrow">LOCAL ESCAPE</p>
+            <h3>Mount Pulag</h3>
+            <p class="location">
+              <span aria-hidden="true">⌖</span> Benguet, Philippines
+            </p>
+            <p class="card-description">
+              Wake up above the clouds on one of Luzon’s most memorable mountain
+              adventures.
+            </p>
+            <div class="card-bottom">
+              <span>Explore destination</span
+              ><span class="card-arrow-inline" aria-hidden="true">↗</span>
+            </div>
+          </div>
+        </a>
+        <a
+          class="destination-card"
+          href="batanes.html"
+          aria-label="Explore Batanes, Batanes, Philippines"
+        >
+          <div class="card-image">
+            <img
+              src="../image3/batanes.jpg"
+              alt="Batanes — Batanes, Philippines"
+              loading="lazy"
+              decoding="async"
+            />
+            <span class="card-category">Island culture</span>
+            <span class="card-arrow" aria-hidden="true">↗</span>
+            <span class="card-image-caption">Discover somewhere different</span>
+          </div>
+          <div class="card-content">
+            <p class="card-eyebrow">LOCAL ESCAPE</p>
+            <h3>Batanes</h3>
+            <p class="location">
+              <span aria-hidden="true">⌖</span> Batanes, Philippines
+            </p>
+            <p class="card-description">
+              Discover windswept hills, stone houses, dramatic coastlines, and a
+              quiet island atmosphere.
+            </p>
+            <div class="card-bottom">
+              <span>Explore destination</span
+              ><span class="card-arrow-inline" aria-hidden="true">↗</span>
+            </div>
+          </div>
+        </a>
+        <a
+          class="destination-card"
+          href="gigantes.html"
+          aria-label="Explore Isla Gigantes, Carles, Iloilo, Philippines"
+        >
+          <div class="card-image">
+            <img
+              src="../image3/gigantes.jpg"
+              alt="Isla Gigantes — Carles, Iloilo, Philippines"
+              loading="lazy"
+              decoding="async"
+            />
+            <span class="card-category">Island escape</span>
+            <span class="card-arrow" aria-hidden="true">↗</span>
+            <span class="card-image-caption">Discover somewhere different</span>
+          </div>
+          <div class="card-content">
+            <p class="card-eyebrow">LOCAL ESCAPE</p>
+            <h3>Isla Gigantes</h3>
+            <p class="location">
+              <span aria-hidden="true">⌖</span> Carles, Iloilo, Philippines
+            </p>
+            <p class="card-description">
+              Spend the day exploring turquoise water, white-sand coves, and
+              limestone island scenery.
+            </p>
+            <div class="card-bottom">
+              <span>Explore destination</span
+              ><span class="card-arrow-inline" aria-hidden="true">↗</span>
+            </div>
+          </div>
+        </a>
+        <a
+          class="destination-card"
+          href="tawi-tawi.html"
+          aria-label="Explore Tawi-Tawi, Tawi-Tawi, Philippines"
+        >
+          <div class="card-image">
+            <img
+              src="https://assets.science.nasa.gov/content/dam/science/esd/eo/images/imagerecords/149000/149738/tawitawi-oli_2013-2022_lrg.jpg"
+              alt="Tawi-Tawi — Tawi-Tawi, Philippines"
+              loading="lazy"
+              decoding="async"
+            />
+            <span class="card-category">Remote islands</span>
+            <span class="card-arrow" aria-hidden="true">↗</span>
+            <span class="card-image-caption">Discover somewhere different</span>
+          </div>
+          <div class="card-content">
+            <p class="card-eyebrow">LOCAL ESCAPE</p>
+            <h3>Tawi-Tawi</h3>
+            <p class="location">
+              <span aria-hidden="true">⌖</span> Tawi-Tawi, Philippines
+            </p>
+            <p class="card-description">
+              Explore a remarkable southern island province shaped by clear
+              waters and maritime culture.
+            </p>
+            <div class="card-bottom">
+              <span>Explore destination</span
+              ><span class="card-arrow-inline" aria-hidden="true">↗</span>
+            </div>
+          </div>
+        </a>
+        <a
+          class="destination-card"
+          href="palawan.html"
+          aria-label="Explore Palawan, MIMAROPA, Philippines"
+        >
+          <div class="card-image">
+            <img
+              src="https://images.unsplash.com/photo-1741980366094-13e476c6532d?auto=format&amp;fit=crop&amp;w=1500&amp;q=85"
+              alt="Palawan — MIMAROPA, Philippines"
+              loading="lazy"
+              decoding="async"
+            />
+            <span class="card-category">Lagoons &amp; limestone</span>
+            <span class="card-arrow" aria-hidden="true">↗</span>
+            <span class="card-image-caption">Discover somewhere different</span>
+          </div>
+          <div class="card-content">
+            <p class="card-eyebrow">LOCAL ESCAPE</p>
+            <h3>Palawan</h3>
+            <p class="location">
+              <span aria-hidden="true">⌖</span> MIMAROPA, Philippines
+            </p>
+            <p class="card-description">
+              Glide past limestone cliffs, emerald islands, and clear lagoons in
+              a tropical paradise.
+            </p>
+            <div class="card-bottom">
+              <span>Explore destination</span
+              ><span class="card-arrow-inline" aria-hidden="true">↗</span>
+            </div>
+          </div>
+        </a>
+        <a
+          class="destination-card"
+          href="boracay.html"
+          aria-label="Explore Boracay, Malay, Aklan, Philippines"
+        >
+          <div class="card-image">
+            <img
+              src="https://images.unsplash.com/photo-1696341054227-633d5f0bcc37?auto=format&amp;fit=crop&amp;w=1500&amp;q=85"
+              alt="Boracay — Malay, Aklan, Philippines"
+              loading="lazy"
+              decoding="async"
+            />
+            <span class="card-category">White-sand beach</span>
+            <span class="card-arrow" aria-hidden="true">↗</span>
+            <span class="card-image-caption">Discover somewhere different</span>
+          </div>
+          <div class="card-content">
+            <p class="card-eyebrow">LOCAL ESCAPE</p>
+            <h3>Boracay</h3>
+            <p class="location">
+              <span aria-hidden="true">⌖</span> Malay, Aklan, Philippines
+            </p>
+            <p class="card-description">
+              Enjoy powder-soft sand, inviting blue water, sunset sails, and
+              lively island dining.
+            </p>
+            <div class="card-bottom">
+              <span>Explore destination</span
+              ><span class="card-arrow-inline" aria-hidden="true">↗</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </main>
+    <!-- INTERNATIONAL DESTINATIONS NOTE: section banner for destinations outside the Philippines. -->
+    <section class="destination-hero international-hero" id="international">
+      <div class="destination-overlay">
+        <h1>International Destinations</h1>
+        <p>
+          Explore diverse cultures, stunning landscapes, and exciting adventures
+          around the world.
+        </p>
+      </div>
+    </section>
+    <main class="destination-content" id="international-content">
+      <div class="destination-section-heading">
+        <p class="section-eyebrow">PASSPORT-READY INSPIRATION</p>
+        <h2>Go beyond the familiar</h2>
+        <p>
+          Explore colorful towns, cultural landmarks, and new perspectives
+          across the world.
+        </p>
+      </div>
+      <div class="destination-grid">
+        <a
+          class="destination-card"
+          href="chefchaouen.html"
+          aria-label="Explore Chefchaouen, Chefchaouen, Morocco"
+        >
+          <div class="card-image">
+            <img
+              src="../image3/chefchaouen.jpg"
+              alt="Chefchaouen — Chefchaouen, Morocco"
+              loading="lazy"
+              decoding="async"
+            />
+            <span class="card-category">Blue city</span>
+            <span class="card-arrow" aria-hidden="true">↗</span>
+            <span class="card-image-caption">Discover somewhere different</span>
+          </div>
+          <div class="card-content">
+            <p class="card-eyebrow">WORLD DISCOVERY</p>
+            <h3>Chefchaouen</h3>
+            <p class="location">
+              <span aria-hidden="true">⌖</span> Chefchaouen, Morocco
+            </p>
+            <p class="card-description">
+              Wander through blue-washed lanes, artisan shops, mountain views,
+              and peaceful plazas.
+            </p>
+            <div class="card-bottom">
+              <span>Explore destination</span
+              ><span class="card-arrow-inline" aria-hidden="true">↗</span>
+            </div>
+          </div>
+        </a>
+        <a
+          class="destination-card"
+          href="vatican.html"
+          aria-label="Explore Vatican City, Vatican City, within Rome, Italy"
+        >
+          <div class="card-image">
+            <img
+              src="../image3/vatican.jpg"
+              alt="Vatican City — Vatican City, within Rome, Italy"
+              loading="lazy"
+              decoding="async"
+            />
+            <span class="card-category">Art &amp; history</span>
+            <span class="card-arrow" aria-hidden="true">↗</span>
+            <span class="card-image-caption">Discover somewhere different</span>
+          </div>
+          <div class="card-content">
+            <p class="card-eyebrow">WORLD DISCOVERY</p>
+            <h3>Vatican City</h3>
+            <p class="location">
+              <span aria-hidden="true">⌖</span> Vatican City, within Rome, Italy
+            </p>
+            <p class="card-description">
+              Experience world-famous art, monumental architecture, and
+              centuries of history.
+            </p>
+            <div class="card-bottom">
+              <span>Explore destination</span
+              ><span class="card-arrow-inline" aria-hidden="true">↗</span>
+            </div>
+          </div>
+        </a>
+        <a
+          class="destination-card"
+          href="tromso.html"
+          aria-label="Explore Tromsø, Northern Norway"
+        >
+          <div class="card-image">
+            <img
+              src="../image3/tromso.jpg"
+              alt="Tromsø — Northern Norway"
+              loading="lazy"
+              decoding="async"
+            />
+            <span class="card-category">Arctic adventure</span>
+            <span class="card-arrow" aria-hidden="true">↗</span>
+            <span class="card-image-caption">Discover somewhere different</span>
+          </div>
+          <div class="card-content">
+            <p class="card-eyebrow">WORLD DISCOVERY</p>
+            <h3>Tromsø</h3>
+            <p class="location">
+              <span aria-hidden="true">⌖</span> Northern Norway
+            </p>
+            <p class="card-description">
+              Find fjords, Arctic light, mountain views, and winter adventures
+              in northern Norway.
+            </p>
+            <div class="card-bottom">
+              <span>Explore destination</span
+              ><span class="card-arrow-inline" aria-hidden="true">↗</span>
+            </div>
+          </div>
+        </a>
+        <a
+          class="destination-card"
+          href="france.html"
+          aria-label="Explore France, France • featuring Paris"
+        >
+          <div class="card-image">
+            <img
+              src="https://images.unsplash.com/photo-1722579756739-e100f1b42237?auto=format&amp;fit=crop&amp;w=1500&amp;q=85"
+              alt="France — France • featuring Paris"
+              loading="lazy"
+              decoding="async"
+            />
+            <span class="card-category">Landmarks &amp; food</span>
+            <span class="card-arrow" aria-hidden="true">↗</span>
+            <span class="card-image-caption">Discover somewhere different</span>
+          </div>
+          <div class="card-content">
+            <p class="card-eyebrow">WORLD DISCOVERY</p>
+            <h3>France</h3>
+            <p class="location">
+              <span aria-hidden="true">⌖</span> France • featuring Paris
+            </p>
+            <p class="card-description">
+              From landmark-filled Paris to historic towns, art, cuisine, and
+              varied countryside.
+            </p>
+            <div class="card-bottom">
+              <span>Explore destination</span
+              ><span class="card-arrow-inline" aria-hidden="true">↗</span>
+            </div>
+          </div>
+        </a>
+        <a
+          class="destination-card"
+          href="japan.html"
+          aria-label="Explore Japan, Japan • featuring Kyoto"
+        >
+          <div class="card-image">
+            <img
+              src="https://images.unsplash.com/photo-1755457080249-c033f7451fe0?auto=format&amp;fit=crop&amp;w=1500&amp;q=85"
+              alt="Japan — Japan • featuring Kyoto"
+              loading="lazy"
+              decoding="async"
+            />
+            <span class="card-category">Tradition &amp; modern life</span>
+            <span class="card-arrow" aria-hidden="true">↗</span>
+            <span class="card-image-caption">Discover somewhere different</span>
+          </div>
+          <div class="card-content">
+            <p class="card-eyebrow">WORLD DISCOVERY</p>
+            <h3>Japan</h3>
+            <p class="location">
+              <span aria-hidden="true">⌖</span> Japan • featuring Kyoto
+            </p>
+            <p class="card-description">
+              Explore temple paths, traditional streets, seasonal scenery, and
+              dynamic city life.
+            </p>
+            <div class="card-bottom">
+              <span>Explore destination</span
+              ><span class="card-arrow-inline" aria-hidden="true">↗</span>
+            </div>
+          </div>
+        </a>
+        <a
+          class="destination-card"
+          href="korea.html"
+          aria-label="Explore South Korea, South Korea • featuring Seoul"
+        >
+          <div class="card-image">
+            <img
+              src="https://images.unsplash.com/photo-1746238865244-7d07f6bdbc38?auto=format&amp;fit=crop&amp;w=1500&amp;q=85"
+              alt="South Korea — South Korea • featuring Seoul"
+              loading="lazy"
+              decoding="async"
+            />
+            <span class="card-category">City &amp; culture</span>
+            <span class="card-arrow" aria-hidden="true">↗</span>
+            <span class="card-image-caption">Discover somewhere different</span>
+          </div>
+          <div class="card-content">
+            <p class="card-eyebrow">WORLD DISCOVERY</p>
+            <h3>South Korea</h3>
+            <p class="location">
+              <span aria-hidden="true">⌖</span> South Korea • featuring Seoul
+            </p>
+            <p class="card-description">
+              Mix royal-palace history, food markets, riverside walks, and
+              modern city energy.
+            </p>
+            <div class="card-bottom">
+              <span>Explore destination</span
+              ><span class="card-arrow-inline" aria-hidden="true">↗</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </main>
+    <!-- GALLERY NOTE: introduces the image gallery and its destination photography. -->
+    <section class="gallery-hero" id="gallery">
+      <div class="gallery-overlay">
+        <h1>Gallery</h1>
+        <p>
+          A glimpse of the places, people, and moments
+          <br />
+          that make every journey special.
+        </p>
+      </div>
+    </section>
+    <!-- GALLERY CONTENT NOTE: destination filters and photo cards visitors can browse or expand. -->
+    <section class="gallery-section" id="gallery-content">
+      <div class="location-filters">
+        <button class="filter-btn active" onclick="filterGallery('all', this)">
+          All
+        </button>
+        <button class="filter-btn" onclick="filterGallery('chefchaouen', this)">
+          Chefchaouen
+        </button>
+        <button class="filter-btn" onclick="filterGallery('vatican', this)">
+          Vatican City
+        </button>
+        <button class="filter-btn" onclick="filterGallery('tromso', this)">
+          Tromsø
+        </button>
+        <button class="filter-btn" onclick="filterGallery('pulag', this)">
+          Mount Pulag
+        </button>
+        <button class="filter-btn" onclick="filterGallery('batanes', this)">
+          Batanes
+        </button>
+        <button class="filter-btn" onclick="filterGallery('gigantes', this)">
+          Isla Gigantes
+        </button>
+        <button class="filter-btn" onclick="filterGallery('tawi-tawi', this)">
+          Tawi-Tawi
+        </button>
+        <button class="filter-btn" onclick="filterGallery('palawan', this)">
+          Palawan
+        </button>
+        <button class="filter-btn" onclick="filterGallery('boracay', this)">
+          Boracay
+        </button>
+        <button class="filter-btn" onclick="filterGallery('france', this)">
+          France
+        </button>
+        <button class="filter-btn" onclick="filterGallery('japan', this)">
+          Japan
+        </button>
+        <button class="filter-btn" onclick="filterGallery('korea', this)">
+          Korea
+        </button>
+      </div>
+
+      <div class="gallery-grid">
+        <a
+          class="gallery-item pulag gallery-variation-1"
+          href="pulag.html"
+          aria-label="View Mount Pulag details, image 1"
+        >
+          <img
+            src="../image3/pulag.jpg"
+            alt="Mount Pulag"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="1"
+          />
+          <div class="location-name">
+            <span>Mount Pulag</span><small>Benguet, Philippines</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item pulag gallery-variation-2"
+          href="pulag.html"
+          aria-label="View Mount Pulag details, image 2"
+        >
+          <img
+            src="../image3/pulag.jpg"
+            alt="Mount Pulag"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="2"
+          />
+          <div class="location-name">
+            <span>Mount Pulag</span><small>Benguet, Philippines</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item pulag gallery-variation-3"
+          href="pulag.html"
+          aria-label="View Mount Pulag details, image 3"
+        >
+          <img
+            src="../image3/pulag.jpg"
+            alt="Mount Pulag"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="3"
+          />
+          <div class="location-name">
+            <span>Mount Pulag</span><small>Benguet, Philippines</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item pulag gallery-variation-4"
+          href="pulag.html"
+          aria-label="View Mount Pulag details, image 4"
+        >
+          <img
+            src="../image3/pulag.jpg"
+            alt="Mount Pulag"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="4"
+          />
+          <div class="location-name">
+            <span>Mount Pulag</span><small>Benguet, Philippines</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item pulag gallery-variation-5"
+          href="pulag.html"
+          aria-label="View Mount Pulag details, image 5"
+        >
+          <img
+            src="../image3/pulag.jpg"
+            alt="Mount Pulag"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="5"
+          />
+          <div class="location-name">
+            <span>Mount Pulag</span><small>Benguet, Philippines</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item pulag gallery-variation-6"
+          href="pulag.html"
+          aria-label="View Mount Pulag details, image 6"
+        >
+          <img
+            src="../image3/pulag.jpg"
+            alt="Mount Pulag"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="6"
+          />
+          <div class="location-name">
+            <span>Mount Pulag</span><small>Benguet, Philippines</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item pulag gallery-variation-7"
+          href="pulag.html"
+          aria-label="View Mount Pulag details, image 7"
+        >
+          <img
+            src="../image3/pulag.jpg"
+            alt="Mount Pulag"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="7"
+          />
+          <div class="location-name">
+            <span>Mount Pulag</span><small>Benguet, Philippines</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item pulag gallery-variation-8"
+          href="pulag.html"
+          aria-label="View Mount Pulag details, image 8"
+        >
+          <img
+            src="../image3/pulag.jpg"
+            alt="Mount Pulag"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="8"
+          />
+          <div class="location-name">
+            <span>Mount Pulag</span><small>Benguet, Philippines</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item pulag gallery-variation-9"
+          href="pulag.html"
+          aria-label="View Mount Pulag details, image 9"
+        >
+          <img
+            src="../image3/pulag.jpg"
+            alt="Mount Pulag"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="9"
+          />
+          <div class="location-name">
+            <span>Mount Pulag</span><small>Benguet, Philippines</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item pulag gallery-variation-10"
+          href="pulag.html"
+          aria-label="View Mount Pulag details, image 10"
+        >
+          <img
+            src="../image3/pulag.jpg"
+            alt="Mount Pulag"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="10"
+          />
+          <div class="location-name">
+            <span>Mount Pulag</span><small>Benguet, Philippines</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item batanes gallery-variation-1"
+          href="batanes.html"
+          aria-label="View Batanes details, image 1"
+        >
+          <img
+            src="../image3/batanes.jpg"
+            alt="Batanes"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="1"
+          />
+          <div class="location-name">
+            <span>Batanes</span><small>Batanes, Philippines</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item batanes gallery-variation-2"
+          href="batanes.html"
+          aria-label="View Batanes details, image 2"
+        >
+          <img
+            src="../image3/batanes.jpg"
+            alt="Batanes"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="2"
+          />
+          <div class="location-name">
+            <span>Batanes</span><small>Batanes, Philippines</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item batanes gallery-variation-3"
+          href="batanes.html"
+          aria-label="View Batanes details, image 3"
+        >
+          <img
+            src="../image3/batanes.jpg"
+            alt="Batanes"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="3"
+          />
+          <div class="location-name">
+            <span>Batanes</span><small>Batanes, Philippines</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item batanes gallery-variation-4"
+          href="batanes.html"
+          aria-label="View Batanes details, image 4"
+        >
+          <img
+            src="../image3/batanes.jpg"
+            alt="Batanes"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="4"
+          />
+          <div class="location-name">
+            <span>Batanes</span><small>Batanes, Philippines</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item batanes gallery-variation-5"
+          href="batanes.html"
+          aria-label="View Batanes details, image 5"
+        >
+          <img
+            src="../image3/batanes.jpg"
+            alt="Batanes"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="5"
+          />
+          <div class="location-name">
+            <span>Batanes</span><small>Batanes, Philippines</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item batanes gallery-variation-6"
+          href="batanes.html"
+          aria-label="View Batanes details, image 6"
+        >
+          <img
+            src="../image3/batanes.jpg"
+            alt="Batanes"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="6"
+          />
+          <div class="location-name">
+            <span>Batanes</span><small>Batanes, Philippines</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item batanes gallery-variation-7"
+          href="batanes.html"
+          aria-label="View Batanes details, image 7"
+        >
+          <img
+            src="../image3/batanes.jpg"
+            alt="Batanes"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="7"
+          />
+          <div class="location-name">
+            <span>Batanes</span><small>Batanes, Philippines</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item batanes gallery-variation-8"
+          href="batanes.html"
+          aria-label="View Batanes details, image 8"
+        >
+          <img
+            src="../image3/batanes.jpg"
+            alt="Batanes"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="8"
+          />
+          <div class="location-name">
+            <span>Batanes</span><small>Batanes, Philippines</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item batanes gallery-variation-9"
+          href="batanes.html"
+          aria-label="View Batanes details, image 9"
+        >
+          <img
+            src="../image3/batanes.jpg"
+            alt="Batanes"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="9"
+          />
+          <div class="location-name">
+            <span>Batanes</span><small>Batanes, Philippines</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item batanes gallery-variation-10"
+          href="batanes.html"
+          aria-label="View Batanes details, image 10"
+        >
+          <img
+            src="../image3/batanes.jpg"
+            alt="Batanes"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="10"
+          />
+          <div class="location-name">
+            <span>Batanes</span><small>Batanes, Philippines</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item gigantes gallery-variation-1"
+          href="gigantes.html"
+          aria-label="View Isla Gigantes details, image 1"
+        >
+          <img
+            src="../image3/gigantes.jpg"
+            alt="Isla Gigantes"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="1"
+          />
+          <div class="location-name">
+            <span>Isla Gigantes</span><small>Carles, Iloilo, Philippines</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item gigantes gallery-variation-2"
+          href="gigantes.html"
+          aria-label="View Isla Gigantes details, image 2"
+        >
+          <img
+            src="../image3/gigantes.jpg"
+            alt="Isla Gigantes"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="2"
+          />
+          <div class="location-name">
+            <span>Isla Gigantes</span><small>Carles, Iloilo, Philippines</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item gigantes gallery-variation-3"
+          href="gigantes.html"
+          aria-label="View Isla Gigantes details, image 3"
+        >
+          <img
+            src="../image3/gigantes.jpg"
+            alt="Isla Gigantes"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="3"
+          />
+          <div class="location-name">
+            <span>Isla Gigantes</span><small>Carles, Iloilo, Philippines</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item gigantes gallery-variation-4"
+          href="gigantes.html"
+          aria-label="View Isla Gigantes details, image 4"
+        >
+          <img
+            src="../image3/gigantes.jpg"
+            alt="Isla Gigantes"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="4"
+          />
+          <div class="location-name">
+            <span>Isla Gigantes</span><small>Carles, Iloilo, Philippines</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item gigantes gallery-variation-5"
+          href="gigantes.html"
+          aria-label="View Isla Gigantes details, image 5"
+        >
+          <img
+            src="../image3/gigantes.jpg"
+            alt="Isla Gigantes"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="5"
+          />
+          <div class="location-name">
+            <span>Isla Gigantes</span><small>Carles, Iloilo, Philippines</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item gigantes gallery-variation-6"
+          href="gigantes.html"
+          aria-label="View Isla Gigantes details, image 6"
+        >
+          <img
+            src="../image3/gigantes.jpg"
+            alt="Isla Gigantes"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="6"
+          />
+          <div class="location-name">
+            <span>Isla Gigantes</span><small>Carles, Iloilo, Philippines</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item gigantes gallery-variation-7"
+          href="gigantes.html"
+          aria-label="View Isla Gigantes details, image 7"
+        >
+          <img
+            src="../image3/gigantes.jpg"
+            alt="Isla Gigantes"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="7"
+          />
+          <div class="location-name">
+            <span>Isla Gigantes</span><small>Carles, Iloilo, Philippines</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item gigantes gallery-variation-8"
+          href="gigantes.html"
+          aria-label="View Isla Gigantes details, image 8"
+        >
+          <img
+            src="../image3/gigantes.jpg"
+            alt="Isla Gigantes"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="8"
+          />
+          <div class="location-name">
+            <span>Isla Gigantes</span><small>Carles, Iloilo, Philippines</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item gigantes gallery-variation-9"
+          href="gigantes.html"
+          aria-label="View Isla Gigantes details, image 9"
+        >
+          <img
+            src="../image3/gigantes.jpg"
+            alt="Isla Gigantes"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="9"
+          />
+          <div class="location-name">
+            <span>Isla Gigantes</span><small>Carles, Iloilo, Philippines</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item gigantes gallery-variation-10"
+          href="gigantes.html"
+          aria-label="View Isla Gigantes details, image 10"
+        >
+          <img
+            src="../image3/gigantes.jpg"
+            alt="Isla Gigantes"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="10"
+          />
+          <div class="location-name">
+            <span>Isla Gigantes</span><small>Carles, Iloilo, Philippines</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item tawi-tawi gallery-variation-1"
+          href="tawi-tawi.html"
+          aria-label="View Tawi-Tawi details, image 1"
+        >
+          <img
+            src="https://assets.science.nasa.gov/content/dam/science/esd/eo/images/imagerecords/149000/149738/tawitawi-oli_2013-2022_lrg.jpg"
+            alt="Tawi-Tawi"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="1"
+          />
+          <div class="location-name">
+            <span>Tawi-Tawi</span><small>Tawi-Tawi, Philippines</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item tawi-tawi gallery-variation-2"
+          href="tawi-tawi.html"
+          aria-label="View Tawi-Tawi details, image 2"
+        >
+          <img
+            src="https://assets.science.nasa.gov/content/dam/science/esd/eo/images/imagerecords/149000/149738/tawitawi-oli_2013-2022_lrg.jpg"
+            alt="Tawi-Tawi"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="2"
+          />
+          <div class="location-name">
+            <span>Tawi-Tawi</span><small>Tawi-Tawi, Philippines</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item tawi-tawi gallery-variation-3"
+          href="tawi-tawi.html"
+          aria-label="View Tawi-Tawi details, image 3"
+        >
+          <img
+            src="https://assets.science.nasa.gov/content/dam/science/esd/eo/images/imagerecords/149000/149738/tawitawi-oli_2013-2022_lrg.jpg"
+            alt="Tawi-Tawi"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="3"
+          />
+          <div class="location-name">
+            <span>Tawi-Tawi</span><small>Tawi-Tawi, Philippines</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item tawi-tawi gallery-variation-4"
+          href="tawi-tawi.html"
+          aria-label="View Tawi-Tawi details, image 4"
+        >
+          <img
+            src="https://assets.science.nasa.gov/content/dam/science/esd/eo/images/imagerecords/149000/149738/tawitawi-oli_2013-2022_lrg.jpg"
+            alt="Tawi-Tawi"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="4"
+          />
+          <div class="location-name">
+            <span>Tawi-Tawi</span><small>Tawi-Tawi, Philippines</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item tawi-tawi gallery-variation-5"
+          href="tawi-tawi.html"
+          aria-label="View Tawi-Tawi details, image 5"
+        >
+          <img
+            src="https://assets.science.nasa.gov/content/dam/science/esd/eo/images/imagerecords/149000/149738/tawitawi-oli_2013-2022_lrg.jpg"
+            alt="Tawi-Tawi"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="5"
+          />
+          <div class="location-name">
+            <span>Tawi-Tawi</span><small>Tawi-Tawi, Philippines</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item tawi-tawi gallery-variation-6"
+          href="tawi-tawi.html"
+          aria-label="View Tawi-Tawi details, image 6"
+        >
+          <img
+            src="https://assets.science.nasa.gov/content/dam/science/esd/eo/images/imagerecords/149000/149738/tawitawi-oli_2013-2022_lrg.jpg"
+            alt="Tawi-Tawi"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="6"
+          />
+          <div class="location-name">
+            <span>Tawi-Tawi</span><small>Tawi-Tawi, Philippines</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item tawi-tawi gallery-variation-7"
+          href="tawi-tawi.html"
+          aria-label="View Tawi-Tawi details, image 7"
+        >
+          <img
+            src="https://assets.science.nasa.gov/content/dam/science/esd/eo/images/imagerecords/149000/149738/tawitawi-oli_2013-2022_lrg.jpg"
+            alt="Tawi-Tawi"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="7"
+          />
+          <div class="location-name">
+            <span>Tawi-Tawi</span><small>Tawi-Tawi, Philippines</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item tawi-tawi gallery-variation-8"
+          href="tawi-tawi.html"
+          aria-label="View Tawi-Tawi details, image 8"
+        >
+          <img
+            src="https://assets.science.nasa.gov/content/dam/science/esd/eo/images/imagerecords/149000/149738/tawitawi-oli_2013-2022_lrg.jpg"
+            alt="Tawi-Tawi"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="8"
+          />
+          <div class="location-name">
+            <span>Tawi-Tawi</span><small>Tawi-Tawi, Philippines</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item tawi-tawi gallery-variation-9"
+          href="tawi-tawi.html"
+          aria-label="View Tawi-Tawi details, image 9"
+        >
+          <img
+            src="https://assets.science.nasa.gov/content/dam/science/esd/eo/images/imagerecords/149000/149738/tawitawi-oli_2013-2022_lrg.jpg"
+            alt="Tawi-Tawi"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="9"
+          />
+          <div class="location-name">
+            <span>Tawi-Tawi</span><small>Tawi-Tawi, Philippines</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item tawi-tawi gallery-variation-10"
+          href="tawi-tawi.html"
+          aria-label="View Tawi-Tawi details, image 10"
+        >
+          <img
+            src="https://assets.science.nasa.gov/content/dam/science/esd/eo/images/imagerecords/149000/149738/tawitawi-oli_2013-2022_lrg.jpg"
+            alt="Tawi-Tawi"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="10"
+          />
+          <div class="location-name">
+            <span>Tawi-Tawi</span><small>Tawi-Tawi, Philippines</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item palawan gallery-variation-1"
+          href="palawan.html"
+          aria-label="View Palawan details, image 1"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1741980366094-13e476c6532d?auto=format&amp;fit=crop&amp;w=1500&amp;q=85"
+            alt="Palawan"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="1"
+          />
+          <div class="location-name">
+            <span>Palawan</span><small>MIMAROPA, Philippines</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item palawan gallery-variation-2"
+          href="palawan.html"
+          aria-label="View Palawan details, image 2"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1741980366094-13e476c6532d?auto=format&amp;fit=crop&amp;w=1500&amp;q=85"
+            alt="Palawan"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="2"
+          />
+          <div class="location-name">
+            <span>Palawan</span><small>MIMAROPA, Philippines</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item palawan gallery-variation-3"
+          href="palawan.html"
+          aria-label="View Palawan details, image 3"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1741980366094-13e476c6532d?auto=format&amp;fit=crop&amp;w=1500&amp;q=85"
+            alt="Palawan"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="3"
+          />
+          <div class="location-name">
+            <span>Palawan</span><small>MIMAROPA, Philippines</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item palawan gallery-variation-4"
+          href="palawan.html"
+          aria-label="View Palawan details, image 4"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1741980366094-13e476c6532d?auto=format&amp;fit=crop&amp;w=1500&amp;q=85"
+            alt="Palawan"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="4"
+          />
+          <div class="location-name">
+            <span>Palawan</span><small>MIMAROPA, Philippines</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item palawan gallery-variation-5"
+          href="palawan.html"
+          aria-label="View Palawan details, image 5"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1741980366094-13e476c6532d?auto=format&amp;fit=crop&amp;w=1500&amp;q=85"
+            alt="Palawan"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="5"
+          />
+          <div class="location-name">
+            <span>Palawan</span><small>MIMAROPA, Philippines</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item palawan gallery-variation-6"
+          href="palawan.html"
+          aria-label="View Palawan details, image 6"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1741980366094-13e476c6532d?auto=format&amp;fit=crop&amp;w=1500&amp;q=85"
+            alt="Palawan"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="6"
+          />
+          <div class="location-name">
+            <span>Palawan</span><small>MIMAROPA, Philippines</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item palawan gallery-variation-7"
+          href="palawan.html"
+          aria-label="View Palawan details, image 7"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1741980366094-13e476c6532d?auto=format&amp;fit=crop&amp;w=1500&amp;q=85"
+            alt="Palawan"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="7"
+          />
+          <div class="location-name">
+            <span>Palawan</span><small>MIMAROPA, Philippines</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item palawan gallery-variation-8"
+          href="palawan.html"
+          aria-label="View Palawan details, image 8"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1741980366094-13e476c6532d?auto=format&amp;fit=crop&amp;w=1500&amp;q=85"
+            alt="Palawan"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="8"
+          />
+          <div class="location-name">
+            <span>Palawan</span><small>MIMAROPA, Philippines</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item palawan gallery-variation-9"
+          href="palawan.html"
+          aria-label="View Palawan details, image 9"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1741980366094-13e476c6532d?auto=format&amp;fit=crop&amp;w=1500&amp;q=85"
+            alt="Palawan"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="9"
+          />
+          <div class="location-name">
+            <span>Palawan</span><small>MIMAROPA, Philippines</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item palawan gallery-variation-10"
+          href="palawan.html"
+          aria-label="View Palawan details, image 10"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1741980366094-13e476c6532d?auto=format&amp;fit=crop&amp;w=1500&amp;q=85"
+            alt="Palawan"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="10"
+          />
+          <div class="location-name">
+            <span>Palawan</span><small>MIMAROPA, Philippines</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item boracay gallery-variation-1"
+          href="boracay.html"
+          aria-label="View Boracay details, image 1"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1696341054227-633d5f0bcc37?auto=format&amp;fit=crop&amp;w=1500&amp;q=85"
+            alt="Boracay"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="1"
+          />
+          <div class="location-name">
+            <span>Boracay</span><small>Malay, Aklan, Philippines</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item boracay gallery-variation-2"
+          href="boracay.html"
+          aria-label="View Boracay details, image 2"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1696341054227-633d5f0bcc37?auto=format&amp;fit=crop&amp;w=1500&amp;q=85"
+            alt="Boracay"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="2"
+          />
+          <div class="location-name">
+            <span>Boracay</span><small>Malay, Aklan, Philippines</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item boracay gallery-variation-3"
+          href="boracay.html"
+          aria-label="View Boracay details, image 3"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1696341054227-633d5f0bcc37?auto=format&amp;fit=crop&amp;w=1500&amp;q=85"
+            alt="Boracay"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="3"
+          />
+          <div class="location-name">
+            <span>Boracay</span><small>Malay, Aklan, Philippines</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item boracay gallery-variation-4"
+          href="boracay.html"
+          aria-label="View Boracay details, image 4"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1696341054227-633d5f0bcc37?auto=format&amp;fit=crop&amp;w=1500&amp;q=85"
+            alt="Boracay"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="4"
+          />
+          <div class="location-name">
+            <span>Boracay</span><small>Malay, Aklan, Philippines</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item boracay gallery-variation-5"
+          href="boracay.html"
+          aria-label="View Boracay details, image 5"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1696341054227-633d5f0bcc37?auto=format&amp;fit=crop&amp;w=1500&amp;q=85"
+            alt="Boracay"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="5"
+          />
+          <div class="location-name">
+            <span>Boracay</span><small>Malay, Aklan, Philippines</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item boracay gallery-variation-6"
+          href="boracay.html"
+          aria-label="View Boracay details, image 6"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1696341054227-633d5f0bcc37?auto=format&amp;fit=crop&amp;w=1500&amp;q=85"
+            alt="Boracay"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="6"
+          />
+          <div class="location-name">
+            <span>Boracay</span><small>Malay, Aklan, Philippines</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item boracay gallery-variation-7"
+          href="boracay.html"
+          aria-label="View Boracay details, image 7"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1696341054227-633d5f0bcc37?auto=format&amp;fit=crop&amp;w=1500&amp;q=85"
+            alt="Boracay"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="7"
+          />
+          <div class="location-name">
+            <span>Boracay</span><small>Malay, Aklan, Philippines</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item boracay gallery-variation-8"
+          href="boracay.html"
+          aria-label="View Boracay details, image 8"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1696341054227-633d5f0bcc37?auto=format&amp;fit=crop&amp;w=1500&amp;q=85"
+            alt="Boracay"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="8"
+          />
+          <div class="location-name">
+            <span>Boracay</span><small>Malay, Aklan, Philippines</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item boracay gallery-variation-9"
+          href="boracay.html"
+          aria-label="View Boracay details, image 9"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1696341054227-633d5f0bcc37?auto=format&amp;fit=crop&amp;w=1500&amp;q=85"
+            alt="Boracay"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="9"
+          />
+          <div class="location-name">
+            <span>Boracay</span><small>Malay, Aklan, Philippines</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item boracay gallery-variation-10"
+          href="boracay.html"
+          aria-label="View Boracay details, image 10"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1696341054227-633d5f0bcc37?auto=format&amp;fit=crop&amp;w=1500&amp;q=85"
+            alt="Boracay"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="10"
+          />
+          <div class="location-name">
+            <span>Boracay</span><small>Malay, Aklan, Philippines</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item chefchaouen gallery-variation-1"
+          href="chefchaouen.html"
+          aria-label="View Chefchaouen details, image 1"
+        >
+          <img
+            src="../image3/chefchaouen.jpg"
+            alt="Chefchaouen"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="1"
+          />
+          <div class="location-name">
+            <span>Chefchaouen</span><small>Chefchaouen, Morocco</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item chefchaouen gallery-variation-2"
+          href="chefchaouen.html"
+          aria-label="View Chefchaouen details, image 2"
+        >
+          <img
+            src="../image3/chefchaouen.jpg"
+            alt="Chefchaouen"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="2"
+          />
+          <div class="location-name">
+            <span>Chefchaouen</span><small>Chefchaouen, Morocco</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item chefchaouen gallery-variation-3"
+          href="chefchaouen.html"
+          aria-label="View Chefchaouen details, image 3"
+        >
+          <img
+            src="../image3/chefchaouen.jpg"
+            alt="Chefchaouen"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="3"
+          />
+          <div class="location-name">
+            <span>Chefchaouen</span><small>Chefchaouen, Morocco</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item chefchaouen gallery-variation-4"
+          href="chefchaouen.html"
+          aria-label="View Chefchaouen details, image 4"
+        >
+          <img
+            src="../image3/chefchaouen.jpg"
+            alt="Chefchaouen"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="4"
+          />
+          <div class="location-name">
+            <span>Chefchaouen</span><small>Chefchaouen, Morocco</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item chefchaouen gallery-variation-5"
+          href="chefchaouen.html"
+          aria-label="View Chefchaouen details, image 5"
+        >
+          <img
+            src="../image3/chefchaouen.jpg"
+            alt="Chefchaouen"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="5"
+          />
+          <div class="location-name">
+            <span>Chefchaouen</span><small>Chefchaouen, Morocco</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item chefchaouen gallery-variation-6"
+          href="chefchaouen.html"
+          aria-label="View Chefchaouen details, image 6"
+        >
+          <img
+            src="../image3/chefchaouen.jpg"
+            alt="Chefchaouen"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="6"
+          />
+          <div class="location-name">
+            <span>Chefchaouen</span><small>Chefchaouen, Morocco</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item chefchaouen gallery-variation-7"
+          href="chefchaouen.html"
+          aria-label="View Chefchaouen details, image 7"
+        >
+          <img
+            src="../image3/chefchaouen.jpg"
+            alt="Chefchaouen"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="7"
+          />
+          <div class="location-name">
+            <span>Chefchaouen</span><small>Chefchaouen, Morocco</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item chefchaouen gallery-variation-8"
+          href="chefchaouen.html"
+          aria-label="View Chefchaouen details, image 8"
+        >
+          <img
+            src="../image3/chefchaouen.jpg"
+            alt="Chefchaouen"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="8"
+          />
+          <div class="location-name">
+            <span>Chefchaouen</span><small>Chefchaouen, Morocco</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item chefchaouen gallery-variation-9"
+          href="chefchaouen.html"
+          aria-label="View Chefchaouen details, image 9"
+        >
+          <img
+            src="../image3/chefchaouen.jpg"
+            alt="Chefchaouen"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="9"
+          />
+          <div class="location-name">
+            <span>Chefchaouen</span><small>Chefchaouen, Morocco</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item chefchaouen gallery-variation-10"
+          href="chefchaouen.html"
+          aria-label="View Chefchaouen details, image 10"
+        >
+          <img
+            src="../image3/chefchaouen.jpg"
+            alt="Chefchaouen"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="10"
+          />
+          <div class="location-name">
+            <span>Chefchaouen</span><small>Chefchaouen, Morocco</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item vatican gallery-variation-1"
+          href="vatican.html"
+          aria-label="View Vatican City details, image 1"
+        >
+          <img
+            src="../image3/vatican.jpg"
+            alt="Vatican City"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="1"
+          />
+          <div class="location-name">
+            <span>Vatican City</span
+            ><small>Vatican City, within Rome, Italy</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item vatican gallery-variation-2"
+          href="vatican.html"
+          aria-label="View Vatican City details, image 2"
+        >
+          <img
+            src="../image3/vatican.jpg"
+            alt="Vatican City"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="2"
+          />
+          <div class="location-name">
+            <span>Vatican City</span
+            ><small>Vatican City, within Rome, Italy</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item vatican gallery-variation-3"
+          href="vatican.html"
+          aria-label="View Vatican City details, image 3"
+        >
+          <img
+            src="../image3/vatican.jpg"
+            alt="Vatican City"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="3"
+          />
+          <div class="location-name">
+            <span>Vatican City</span
+            ><small>Vatican City, within Rome, Italy</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item vatican gallery-variation-4"
+          href="vatican.html"
+          aria-label="View Vatican City details, image 4"
+        >
+          <img
+            src="../image3/vatican.jpg"
+            alt="Vatican City"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="4"
+          />
+          <div class="location-name">
+            <span>Vatican City</span
+            ><small>Vatican City, within Rome, Italy</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item vatican gallery-variation-5"
+          href="vatican.html"
+          aria-label="View Vatican City details, image 5"
+        >
+          <img
+            src="../image3/vatican.jpg"
+            alt="Vatican City"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="5"
+          />
+          <div class="location-name">
+            <span>Vatican City</span
+            ><small>Vatican City, within Rome, Italy</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item vatican gallery-variation-6"
+          href="vatican.html"
+          aria-label="View Vatican City details, image 6"
+        >
+          <img
+            src="../image3/vatican.jpg"
+            alt="Vatican City"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="6"
+          />
+          <div class="location-name">
+            <span>Vatican City</span
+            ><small>Vatican City, within Rome, Italy</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item vatican gallery-variation-7"
+          href="vatican.html"
+          aria-label="View Vatican City details, image 7"
+        >
+          <img
+            src="../image3/vatican.jpg"
+            alt="Vatican City"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="7"
+          />
+          <div class="location-name">
+            <span>Vatican City</span
+            ><small>Vatican City, within Rome, Italy</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item vatican gallery-variation-8"
+          href="vatican.html"
+          aria-label="View Vatican City details, image 8"
+        >
+          <img
+            src="../image3/vatican.jpg"
+            alt="Vatican City"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="8"
+          />
+          <div class="location-name">
+            <span>Vatican City</span
+            ><small>Vatican City, within Rome, Italy</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item vatican gallery-variation-9"
+          href="vatican.html"
+          aria-label="View Vatican City details, image 9"
+        >
+          <img
+            src="../image3/vatican.jpg"
+            alt="Vatican City"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="9"
+          />
+          <div class="location-name">
+            <span>Vatican City</span
+            ><small>Vatican City, within Rome, Italy</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item vatican gallery-variation-10"
+          href="vatican.html"
+          aria-label="View Vatican City details, image 10"
+        >
+          <img
+            src="../image3/vatican.jpg"
+            alt="Vatican City"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="10"
+          />
+          <div class="location-name">
+            <span>Vatican City</span
+            ><small>Vatican City, within Rome, Italy</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item tromso gallery-variation-1"
+          href="tromso.html"
+          aria-label="View Tromsø details, image 1"
+        >
+          <img
+            src="../image3/tromso.jpg"
+            alt="Tromsø"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="1"
+          />
+          <div class="location-name">
+            <span>Tromsø</span><small>Northern Norway</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item tromso gallery-variation-2"
+          href="tromso.html"
+          aria-label="View Tromsø details, image 2"
+        >
+          <img
+            src="../image3/tromso.jpg"
+            alt="Tromsø"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="2"
+          />
+          <div class="location-name">
+            <span>Tromsø</span><small>Northern Norway</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item tromso gallery-variation-3"
+          href="tromso.html"
+          aria-label="View Tromsø details, image 3"
+        >
+          <img
+            src="../image3/tromso.jpg"
+            alt="Tromsø"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="3"
+          />
+          <div class="location-name">
+            <span>Tromsø</span><small>Northern Norway</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item tromso gallery-variation-4"
+          href="tromso.html"
+          aria-label="View Tromsø details, image 4"
+        >
+          <img
+            src="../image3/tromso.jpg"
+            alt="Tromsø"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="4"
+          />
+          <div class="location-name">
+            <span>Tromsø</span><small>Northern Norway</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item tromso gallery-variation-5"
+          href="tromso.html"
+          aria-label="View Tromsø details, image 5"
+        >
+          <img
+            src="../image3/tromso.jpg"
+            alt="Tromsø"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="5"
+          />
+          <div class="location-name">
+            <span>Tromsø</span><small>Northern Norway</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item tromso gallery-variation-6"
+          href="tromso.html"
+          aria-label="View Tromsø details, image 6"
+        >
+          <img
+            src="../image3/tromso.jpg"
+            alt="Tromsø"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="6"
+          />
+          <div class="location-name">
+            <span>Tromsø</span><small>Northern Norway</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item tromso gallery-variation-7"
+          href="tromso.html"
+          aria-label="View Tromsø details, image 7"
+        >
+          <img
+            src="../image3/tromso.jpg"
+            alt="Tromsø"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="7"
+          />
+          <div class="location-name">
+            <span>Tromsø</span><small>Northern Norway</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item tromso gallery-variation-8"
+          href="tromso.html"
+          aria-label="View Tromsø details, image 8"
+        >
+          <img
+            src="../image3/tromso.jpg"
+            alt="Tromsø"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="8"
+          />
+          <div class="location-name">
+            <span>Tromsø</span><small>Northern Norway</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item tromso gallery-variation-9"
+          href="tromso.html"
+          aria-label="View Tromsø details, image 9"
+        >
+          <img
+            src="../image3/tromso.jpg"
+            alt="Tromsø"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="9"
+          />
+          <div class="location-name">
+            <span>Tromsø</span><small>Northern Norway</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item tromso gallery-variation-10"
+          href="tromso.html"
+          aria-label="View Tromsø details, image 10"
+        >
+          <img
+            src="../image3/tromso.jpg"
+            alt="Tromsø"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="10"
+          />
+          <div class="location-name">
+            <span>Tromsø</span><small>Northern Norway</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item france gallery-variation-1"
+          href="france.html"
+          aria-label="View France details, image 1"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1722579756739-e100f1b42237?auto=format&amp;fit=crop&amp;w=1500&amp;q=85"
+            alt="France"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="1"
+          />
+          <div class="location-name">
+            <span>France</span><small>France • featuring Paris</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item france gallery-variation-2"
+          href="france.html"
+          aria-label="View France details, image 2"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1722579756739-e100f1b42237?auto=format&amp;fit=crop&amp;w=1500&amp;q=85"
+            alt="France"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="2"
+          />
+          <div class="location-name">
+            <span>France</span><small>France • featuring Paris</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item france gallery-variation-3"
+          href="france.html"
+          aria-label="View France details, image 3"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1722579756739-e100f1b42237?auto=format&amp;fit=crop&amp;w=1500&amp;q=85"
+            alt="France"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="3"
+          />
+          <div class="location-name">
+            <span>France</span><small>France • featuring Paris</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item france gallery-variation-4"
+          href="france.html"
+          aria-label="View France details, image 4"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1722579756739-e100f1b42237?auto=format&amp;fit=crop&amp;w=1500&amp;q=85"
+            alt="France"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="4"
+          />
+          <div class="location-name">
+            <span>France</span><small>France • featuring Paris</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item france gallery-variation-5"
+          href="france.html"
+          aria-label="View France details, image 5"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1722579756739-e100f1b42237?auto=format&amp;fit=crop&amp;w=1500&amp;q=85"
+            alt="France"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="5"
+          />
+          <div class="location-name">
+            <span>France</span><small>France • featuring Paris</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item france gallery-variation-6"
+          href="france.html"
+          aria-label="View France details, image 6"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1722579756739-e100f1b42237?auto=format&amp;fit=crop&amp;w=1500&amp;q=85"
+            alt="France"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="6"
+          />
+          <div class="location-name">
+            <span>France</span><small>France • featuring Paris</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item france gallery-variation-7"
+          href="france.html"
+          aria-label="View France details, image 7"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1722579756739-e100f1b42237?auto=format&amp;fit=crop&amp;w=1500&amp;q=85"
+            alt="France"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="7"
+          />
+          <div class="location-name">
+            <span>France</span><small>France • featuring Paris</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item france gallery-variation-8"
+          href="france.html"
+          aria-label="View France details, image 8"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1722579756739-e100f1b42237?auto=format&amp;fit=crop&amp;w=1500&amp;q=85"
+            alt="France"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="8"
+          />
+          <div class="location-name">
+            <span>France</span><small>France • featuring Paris</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item france gallery-variation-9"
+          href="france.html"
+          aria-label="View France details, image 9"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1722579756739-e100f1b42237?auto=format&amp;fit=crop&amp;w=1500&amp;q=85"
+            alt="France"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="9"
+          />
+          <div class="location-name">
+            <span>France</span><small>France • featuring Paris</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item france gallery-variation-10"
+          href="france.html"
+          aria-label="View France details, image 10"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1722579756739-e100f1b42237?auto=format&amp;fit=crop&amp;w=1500&amp;q=85"
+            alt="France"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="10"
+          />
+          <div class="location-name">
+            <span>France</span><small>France • featuring Paris</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item japan gallery-variation-1"
+          href="japan.html"
+          aria-label="View Japan details, image 1"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1755457080249-c033f7451fe0?auto=format&amp;fit=crop&amp;w=1500&amp;q=85"
+            alt="Japan"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="1"
+          />
+          <div class="location-name">
+            <span>Japan</span><small>Japan • featuring Kyoto</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item japan gallery-variation-2"
+          href="japan.html"
+          aria-label="View Japan details, image 2"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1755457080249-c033f7451fe0?auto=format&amp;fit=crop&amp;w=1500&amp;q=85"
+            alt="Japan"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="2"
+          />
+          <div class="location-name">
+            <span>Japan</span><small>Japan • featuring Kyoto</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item japan gallery-variation-3"
+          href="japan.html"
+          aria-label="View Japan details, image 3"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1755457080249-c033f7451fe0?auto=format&amp;fit=crop&amp;w=1500&amp;q=85"
+            alt="Japan"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="3"
+          />
+          <div class="location-name">
+            <span>Japan</span><small>Japan • featuring Kyoto</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item japan gallery-variation-4"
+          href="japan.html"
+          aria-label="View Japan details, image 4"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1755457080249-c033f7451fe0?auto=format&amp;fit=crop&amp;w=1500&amp;q=85"
+            alt="Japan"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="4"
+          />
+          <div class="location-name">
+            <span>Japan</span><small>Japan • featuring Kyoto</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item japan gallery-variation-5"
+          href="japan.html"
+          aria-label="View Japan details, image 5"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1755457080249-c033f7451fe0?auto=format&amp;fit=crop&amp;w=1500&amp;q=85"
+            alt="Japan"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="5"
+          />
+          <div class="location-name">
+            <span>Japan</span><small>Japan • featuring Kyoto</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item japan gallery-variation-6"
+          href="japan.html"
+          aria-label="View Japan details, image 6"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1755457080249-c033f7451fe0?auto=format&amp;fit=crop&amp;w=1500&amp;q=85"
+            alt="Japan"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="6"
+          />
+          <div class="location-name">
+            <span>Japan</span><small>Japan • featuring Kyoto</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item japan gallery-variation-7"
+          href="japan.html"
+          aria-label="View Japan details, image 7"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1755457080249-c033f7451fe0?auto=format&amp;fit=crop&amp;w=1500&amp;q=85"
+            alt="Japan"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="7"
+          />
+          <div class="location-name">
+            <span>Japan</span><small>Japan • featuring Kyoto</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item japan gallery-variation-8"
+          href="japan.html"
+          aria-label="View Japan details, image 8"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1755457080249-c033f7451fe0?auto=format&amp;fit=crop&amp;w=1500&amp;q=85"
+            alt="Japan"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="8"
+          />
+          <div class="location-name">
+            <span>Japan</span><small>Japan • featuring Kyoto</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item japan gallery-variation-9"
+          href="japan.html"
+          aria-label="View Japan details, image 9"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1755457080249-c033f7451fe0?auto=format&amp;fit=crop&amp;w=1500&amp;q=85"
+            alt="Japan"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="9"
+          />
+          <div class="location-name">
+            <span>Japan</span><small>Japan • featuring Kyoto</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item japan gallery-variation-10"
+          href="japan.html"
+          aria-label="View Japan details, image 10"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1755457080249-c033f7451fe0?auto=format&amp;fit=crop&amp;w=1500&amp;q=85"
+            alt="Japan"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="10"
+          />
+          <div class="location-name">
+            <span>Japan</span><small>Japan • featuring Kyoto</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item korea gallery-variation-1"
+          href="korea.html"
+          aria-label="View South Korea details, image 1"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1746238865244-7d07f6bdbc38?auto=format&amp;fit=crop&amp;w=1500&amp;q=85"
+            alt="South Korea"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="1"
+          />
+          <div class="location-name">
+            <span>South Korea</span><small>South Korea • featuring Seoul</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item korea gallery-variation-2"
+          href="korea.html"
+          aria-label="View South Korea details, image 2"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1746238865244-7d07f6bdbc38?auto=format&amp;fit=crop&amp;w=1500&amp;q=85"
+            alt="South Korea"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="2"
+          />
+          <div class="location-name">
+            <span>South Korea</span><small>South Korea • featuring Seoul</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item korea gallery-variation-3"
+          href="korea.html"
+          aria-label="View South Korea details, image 3"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1746238865244-7d07f6bdbc38?auto=format&amp;fit=crop&amp;w=1500&amp;q=85"
+            alt="South Korea"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="3"
+          />
+          <div class="location-name">
+            <span>South Korea</span><small>South Korea • featuring Seoul</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item korea gallery-variation-4"
+          href="korea.html"
+          aria-label="View South Korea details, image 4"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1746238865244-7d07f6bdbc38?auto=format&amp;fit=crop&amp;w=1500&amp;q=85"
+            alt="South Korea"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="4"
+          />
+          <div class="location-name">
+            <span>South Korea</span><small>South Korea • featuring Seoul</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item korea gallery-variation-5"
+          href="korea.html"
+          aria-label="View South Korea details, image 5"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1746238865244-7d07f6bdbc38?auto=format&amp;fit=crop&amp;w=1500&amp;q=85"
+            alt="South Korea"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="5"
+          />
+          <div class="location-name">
+            <span>South Korea</span><small>South Korea • featuring Seoul</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item korea gallery-variation-6"
+          href="korea.html"
+          aria-label="View South Korea details, image 6"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1746238865244-7d07f6bdbc38?auto=format&amp;fit=crop&amp;w=1500&amp;q=85"
+            alt="South Korea"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="6"
+          />
+          <div class="location-name">
+            <span>South Korea</span><small>South Korea • featuring Seoul</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item korea gallery-variation-7"
+          href="korea.html"
+          aria-label="View South Korea details, image 7"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1746238865244-7d07f6bdbc38?auto=format&amp;fit=crop&amp;w=1500&amp;q=85"
+            alt="South Korea"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="7"
+          />
+          <div class="location-name">
+            <span>South Korea</span><small>South Korea • featuring Seoul</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item korea gallery-variation-8"
+          href="korea.html"
+          aria-label="View South Korea details, image 8"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1746238865244-7d07f6bdbc38?auto=format&amp;fit=crop&amp;w=1500&amp;q=85"
+            alt="South Korea"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="8"
+          />
+          <div class="location-name">
+            <span>South Korea</span><small>South Korea • featuring Seoul</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item korea gallery-variation-9"
+          href="korea.html"
+          aria-label="View South Korea details, image 9"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1746238865244-7d07f6bdbc38?auto=format&amp;fit=crop&amp;w=1500&amp;q=85"
+            alt="South Korea"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="9"
+          />
+          <div class="location-name">
+            <span>South Korea</span><small>South Korea • featuring Seoul</small>
+          </div>
+        </a>
+        <a
+          class="gallery-item korea gallery-variation-10"
+          href="korea.html"
+          aria-label="View South Korea details, image 10"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1746238865244-7d07f6bdbc38?auto=format&amp;fit=crop&amp;w=1500&amp;q=85"
+            alt="South Korea"
+            loading="lazy"
+            decoding="async"
+            data-gallery-variation="10"
+          />
+          <div class="location-name">
+            <span>South Korea</span><small>South Korea • featuring Seoul</small>
+          </div>
+        </a>
+      </div>
+      <div class="gallery-more-wrap">
+        <button
+          class="gallery-more-btn"
+          id="galleryViewMore"
+          type="button"
+          aria-expanded="false"
+        >
+          View more images
+        </button>
+        <p class="gallery-count" id="galleryCount" aria-live="polite">
+          Showing 5 images per destination.
+        </p>
+      </div>
+    </section>
+
+    <!-- FEEDBACK NOTE: gathers visitor comments and ratings; status and review areas report submission results. -->
+    <section
+      class="feedback-section"
+      id="feedback"
+      aria-labelledby="feedbackTitle"
+    >
+      <div class="feedback-inner">
+        <div class="feedback-intro">
+          <p class="section-eyebrow">YOUR VOICE MATTERS</p>
+          <h2 id="feedbackTitle">Help us make every journey better.</h2>
+          <p>
+            Have a thought about ElseWhere? Share what worked, what could
+            improve, or what you would love to see next. Your feedback helps us
+            make the site more useful for every traveler.
+          </p>
+          <div class="feedback-trust">
+            <span aria-hidden="true">✦</span> Made better with every suggestion.
+          </div>
+          <div class="feedback-highlights" aria-label="What ElseWhere offers">
+            <span><b aria-hidden="true">⌖</b> Local escapes</span>
+            <span><b aria-hidden="true">✧</b> World discoveries</span>
+            <span><b aria-hidden="true">↗</b> Practical travel ideas</span>
+          </div>
+        </div>
+        <form class="feedback-form" id="feedbackForm">
+          <div class="feedback-form-heading">
+            <span class="feedback-form-icon" aria-hidden="true">✦</span>
+            <div>
+              <h3>Leave a review</h3>
+              <p>Your experience matters to us.</p>
+            </div>
+          </div>
+          <label class="feedback-label" for="feedbackName"
+            >Name <span>(optional)</span></label
+          >
+          <input
+            id="feedbackName"
+            name="name"
+            type="text"
+            maxlength="60"
+            placeholder="How should we call you?"
+            autocomplete="name"
+          />
+          <fieldset class="rating-fieldset">
+            <legend>Your rating <span>Required</span></legend>
+            <div
+              class="star-rating"
+              aria-label="Choose a rating from one to five stars"
+            >
+              <input
+                id="rating5"
+                type="radio"
+                name="rating"
+                value="5"
+                required
+              /><label for="rating5" aria-label="5 stars" title="5 stars"
+                >★</label
+              >
+              <input id="rating4" type="radio" name="rating" value="4" /><label
+                for="rating4"
+                aria-label="4 stars"
+                title="4 stars"
+                >★</label
+              >
+              <input id="rating3" type="radio" name="rating" value="3" /><label
+                for="rating3"
+                aria-label="3 stars"
+                title="3 stars"
+                >★</label
+              >
+              <input id="rating2" type="radio" name="rating" value="2" /><label
+                for="rating2"
+                aria-label="2 stars"
+                title="2 stars"
+                >★</label
+              >
+              <input id="rating1" type="radio" name="rating" value="1" /><label
+                for="rating1"
+                aria-label="1 star"
+                title="1 star"
+                >★</label
+              >
+            </div>
+          </fieldset>
+          <label class="feedback-label" for="feedbackComment"
+            >Your comment <span>Tell us what you think</span></label
+          >
+          <textarea
+            id="feedbackComment"
+            name="comment"
+            maxlength="1000"
+            rows="4"
+            placeholder="What did you enjoy, or what should we improve?"
+            required
+          ></textarea>
+          <div class="feedback-form-bottom">
+            <small><span id="feedbackCharCount">0</span>/1000 characters</small>
+            <button class="feedback-submit" type="submit">
+              Post feedback <span aria-hidden="true">↗</span>
+            </button>
+          </div>
+          <p
+            class="feedback-status"
+            id="feedbackStatus"
+            role="status"
+            aria-live="polite"
+          ></p>
+        </form>
+      </div>
+      <div class="reviews-wrap">
+        <div class="reviews-heading">
+          <div>
+            <p class="section-eyebrow">TRAVELER NOTES</p>
+            <h3>What visitors are saying</h3>
+          </div>
+          <p id="feedbackSummary">Be the first to share your experience.</p>
+        </div>
+        <div class="reviews-grid" id="reviewsGrid" aria-live="polite"></div>
+        <p class="reviews-note" id="reviewsNote">
+          Reviews are saved on this device unless shared reviews are enabled.
+        </p>
+      </div>
+    </section>
+
+    <!-- TRAVEL GUIDE NOTE: groups the guide banner, six topic cards, and their detail popup. -->
+    <section id="travel-guide">
+      <!-- TRAVEL GUIDE BANNER NOTE: introduces the planning advice section. -->
+      <section class="guide-hero">
+        <div class="guide-overlay">
+          <h1>Travel Guide</h1>
+
+          <p>
+            Useful tips and guides to make your journey<br />
+            easier, safer, and more enjoyable.
+          </p>
+        </div>
+      </section>
+
+      <!-- TRAVEL GUIDE TOPICS NOTE: packing, budgeting, transport, accommodation, timing, and photography advice. -->
+      <section class="guide-section">
+        <div class="guide-grid">
+          <div class="guide-card">
+            <h2>What to Pack</h2>
+
+            <p>Make sure you have the essentials for a comfortable trip.</p>
+
+            <button onclick="openGuide('packing')">Read more →</button>
+          </div>
+
+          <div class="guide-card">
+            <h2>Budget Travel Tips</h2>
+
+            <p>Travel smart and discover ways to enjoy your trip for less.</p>
+
+            <button onclick="openGuide('budget')">Read more →</button>
+          </div>
+
+          <div class="guide-card">
+            <h2>Transportation</h2>
+
+            <p>Find convenient ways to get around your destination.</p>
+
+            <button onclick="openGuide('transportation')">Read more →</button>
+          </div>
+
+          <div class="guide-card">
+            <h2>Accommodation</h2>
+
+            <p>Find comfortable places to stay wherever you go.</p>
+
+            <button onclick="openGuide('accommodation')">Read more →</button>
+          </div>
+
+          <div class="guide-card">
+            <h2>Best Time to Travel</h2>
+
+            <p>Learn about the best seasons for different destinations.</p>
+
+            <button onclick="openGuide('best-time')">Read more →</button>
+          </div>
+
+          <div class="guide-card">
+            <h2>Photography Tips</h2>
+
+            <p>Capture the best moments of your journey.</p>
+
+            <button onclick="openGuide('photography')">Read more →</button>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <div class="guide-popup" id="guidePopup">
+      <div class="guide-popup-card">
+        <button class="close-guide" onclick="closeGuide()">×</button>
+
+        <div class="guide-blue-line"></div>
+
+        <h2 id="guideTitle">Travel Guide</h2>
+
+        <div id="guideContent"></div>
+      </div>
+    </div>
+    <!-- ABOUT NOTE: introduces the purpose and identity of the ElseWhere travelogue. -->
+    <section class="about-hero" id="about">
+      <div class="about-overlay">
+        <h1>About Us</h1>
+        <p>
+          We are a group of students passionate about travel,
+          <br />
+          exploration, and sharing beautiful places with you.
+        </p>
+      </div>
+    </section>
+    <!-- PURPOSE NOTE: explains why the student team created the ElseWhere travelogue. -->
+    <section class="purpose-section">
+      <div class="purpose-content">
+        <h2>Our Purpose</h2>
+        <p>
+          ElseWhere is a travelogue website created to help people discover
+          beautiful destinations in the Philippines and around the world. We
+          provide useful information about tourist attractions, activities,
+          travel tips, and other helpful details for travelers.
+        </p>
+        <p>
+          Our goal is to make discovering new places easier and more enjoyable
+          by providing clear and accessible travel information in one website.
+        </p>
+      </div>
+    </section>
+    <!-- FAQ NOTE: answers common questions about using and understanding the website. -->
+    <section class="faq-section">
+      <div class="section-title">
+        <h2>Frequently Asked Questions</h2>
+        <p>Find answers to the most common questions about ElseWhere.</p>
+      </div>
+      <div class="faq-container">
+        <details>
+          <summary>What is ElseWhere?</summary>
+          <p>
+            ElseWhere is a travelogue website that features different local and
+            international destinations, travel information, activities, and
+            helpful tips.
+          </p>
+        </details>
+        <details>
+          <summary>What destinations are featured on the website?</summary>
+          <p>
+            The website features selected destinations from the Philippines and
+            different parts of the world.
+          </p>
+        </details>
+        <details>
+          <summary>Are the destinations local or international?</summary>
+          <p>
+            Both. ElseWhere features destinations from the Philippines as well
+            as international destinations.
+          </p>
+        </details>
+        <details>
+          <summary>Where can I find travel tips?</summary>
+          <p>
+            You can find useful travel information and tips on our Travel Guide
+            page.
+          </p>
+        </details>
+        <details>
+          <summary>How can I contact the team?</summary>
+          <p>
+            You can contact us through the contact form and the social media
+            information provided below.
+          </p>
+        </details>
+      </div>
+    </section>
+    <!-- CONTACT NOTE: shows contact information and a sample contact form for visitor messages. -->
+    <section class="contact-section">
+      <div class="contact-container">
+        <div class="contact-image">
+          <div class="contact-overlay">
+            <h2>Contact Us</h2>
+            <p>
+              Have questions, suggestions, or just want to say hi? We'd love to
+              hear from you!
+            </p>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <label for="contact-name"> Name </label>
+          <input
+            id="contact-name"
+            name="name"
+            placeholder="Your name"
+            type="text"
+            required
+          />
+          <label for="contact-email"> Email </label>
+          <input
+            id="contact-email"
+            name="email"
+            placeholder="Your email address"
+            type="email"
+            required
+          />
+          <label for="contact-message"> Message </label>
+          <textarea
+            id="contact-message"
+            name="message"
+            placeholder="Type your message here..."
+            required
+          ></textarea>
+
+          <div class="consent-check">
+            <input
+              id="contact-consent"
+              name="consent"
+              type="checkbox"
+              required
+            />
+            <label for="contact-consent">
+              I agree to the
+              <a
+                href="privacy-policy.html"
+                rel="noopener noreferrer"
+                target="_blank"
+                >Privacy Policy</a
+              >
+              and consent to having my information collected to respond to my
+              message.
+            </label>
+          </div>
+          <button type="submit">Send Message</button>
+        </form>
+
+        <div class="get-in-touch">
+          <h2>Get in Touch</h2>
+          <div class="contact-info">
+            <p>
+              <strong> Email </strong>
+              <br />
+              elsewhere@gmail.com
+            </p>
+            <p>
+              <strong> Facebook </strong>
+              <br />
+              @ElseWheree
+            </p>
+            <p>
+              <strong> Instagram </strong>
+              <br />
+              @elsewhere.travel
+            </p>
+          </div>
+          <h3>
+            Let's explore
+            <br />
+            together!
+          </h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEAM SECTION NOTE: introduces the five contributors and briefly explains each role. -->
+    <section class="team-section" id="team" aria-labelledby="teamTitle">
+      <div class="section-title">
+        <p class="team-eyebrow">THE PEOPLE BEHIND THE JOURNEY</p>
+        <h2 id="teamTitle">Meet the Team</h2>
+        <p>
+          Every detail of ElseWhere is shaped by a team working together to make
+          discovery feel easy, useful, and inspiring.
+        </p>
+        <div class="team-heading-rule" aria-hidden="true"><span></span></div>
+      </div>
+
+      <div class="team-grid" aria-label="ElseWhere project team members">
+        <!-- Project Leader: coordinates the project and keeps the overall work on track. -->
+        <article class="team-card">
+          <div class="team-card-top">
+            <span class="team-number">01 / LEADERSHIP</span
+            ><span class="team-card-symbol" aria-hidden="true">✦</span>
+          </div>
+          <div class="team-avatar" aria-hidden="true">01</div>
+          <h3>Team Member 1</h3>
+          <p class="team-role">Project Leader</p>
+          <p class="team-card-description">
+            Coordinates the overall project, sets priorities, and helps the
+            group stay aligned from planning through final delivery.
+          </p>
+          <div class="team-card-footer">
+            <span>PROJECT DIRECTION</span><span aria-hidden="true">↗</span>
+          </div>
+        </article>
+
+        <!-- Assistant Leader / Programmer: supports coordination and implements website functionality. -->
+        <article class="team-card">
+          <div class="team-card-top">
+            <span class="team-number">02 / DEVELOPMENT</span
+            ><span class="team-card-symbol" aria-hidden="true">⌘</span>
+          </div>
+          <div class="team-avatar" aria-hidden="true">02</div>
+          <h3>Team Member 2</h3>
+          <p class="team-role">Asst. Leader/Programmer</p>
+          <p class="team-card-description">
+            Assists the project leader and builds the code that helps the
+            website’s pages, controls, and interactive features work.
+          </p>
+          <div class="team-card-footer">
+            <span>CODE & COORDINATION</span><span aria-hidden="true">↗</span>
+          </div>
+        </article>
+
+        <!-- Web Designer / Researcher: shapes the user experience and checks destination information. -->
+        <article class="team-card">
+          <div class="team-card-top">
+            <span class="team-number">03 / DESIGN & RESEARCH</span
+            ><span class="team-card-symbol" aria-hidden="true">✧</span>
+          </div>
+          <div class="team-avatar" aria-hidden="true">03</div>
+          <h3>Team Member 3</h3>
+          <p class="team-role">Web Designer/Researcher</p>
+          <p class="team-card-description">
+            Designs clear, consistent page layouts and researches destination
+            details that help visitors explore with confidence.
+          </p>
+          <div class="team-card-footer">
+            <span>DESIGN & DISCOVERY</span><span aria-hidden="true">↗</span>
+          </div>
+        </article>
+
+        <!-- Content Manager / Researcher: organizes written content and checks clarity and relevance. -->
+        <article class="team-card">
+          <div class="team-card-top">
+            <span class="team-number">04 / CONTENT</span
+            ><span class="team-card-symbol" aria-hidden="true">✎</span>
+          </div>
+          <div class="team-avatar" aria-hidden="true">04</div>
+          <h3>Team Member 4</h3>
+          <p class="team-role">Content Manager/Researcher</p>
+          <p class="team-card-description">
+            Organizes and reviews the site’s written content, keeps information
+            easy to follow, and supports destination research.
+          </p>
+          <div class="team-card-footer">
+            <span>CONTENT & ACCURACY</span><span aria-hidden="true">↗</span>
+          </div>
+        </article>
+
+        <!-- Document Officer / Researcher: maintains project records and organizes supporting research. -->
+        <article class="team-card">
+          <div class="team-card-top">
+            <span class="team-number">05 / DOCUMENTATION</span
+            ><span class="team-card-symbol" aria-hidden="true">▤</span>
+          </div>
+          <div class="team-avatar" aria-hidden="true">05</div>
+          <h3>Team Member 5</h3>
+          <p class="team-role">Document Officer/Researcher</p>
+          <p class="team-card-description">
+            Maintains project documents, organizes references and records, and
+            helps keep research materials complete and accessible.
+          </p>
+          <div class="team-card-footer">
+            <span>RECORDS & RESEARCH</span><span aria-hidden="true">↗</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- FOOTER NOTE: provides photo credits, legal links, and the current copyright year. -->
+    <footer class="site-footer">
+      <div class="footer-content">
+        <p class="footer-credit">
+          Photos on this site should be sourced from
+          <a
+            href="https://www.pexels.com"
+            rel="noopener noreferrer"
+            target="_blank"
+            >Pexels</a
+          >
+          and
+          <a
+            href="https://unsplash.com"
+            rel="noopener noreferrer"
+            target="_blank"
+            >Unsplash</a
+          >, both of which offer free-to-use images.
+        </p>
+
+        <nav aria-label="Legal" class="footer-legal">
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms-of-service.html">Terms of Service</a>
+        </nav>
+        <p class="footer-copy">
+          © <span id="footer-year"></span> ElseWhere. All rights reserved.
+        </p>
+      </div>
+    </footer>
+    <!-- SEARCH OVERLAY NOTE: accessible dialog used to filter and open destination pages. -->
+    <div
+      class="destination-search-overlay"
+      id="destinationSearchOverlay"
+      hidden
+    >
+      <section
+        class="destination-search-dialog"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="destination-search-title"
+      >
+        <div class="destination-search-heading">
+          <div>
+            <p class="section-eyebrow">FIND YOUR NEXT STOP</p>
+            <h2 id="destination-search-title">Where would you like to go?</h2>
+          </div>
+          <button
+            class="destination-search-close"
+            type="button"
+            onclick="closeDestinationSearch()"
+            aria-label="Close destination search"
+          >
+            ×
+          </button>
+        </div>
+        <label class="destination-search-field"
+          ><span aria-hidden="true">⌕</span
+          ><input
+            id="destinationSearchInput"
+            type="search"
+            placeholder="Search places, countries, or experiences…"
+            autocomplete="off"
+            aria-label="Search destinations"
+        /></label>
+        <p class="destination-search-hint" id="destinationSearchHint">
+          Explore all 12 destinations or type to narrow the list.
+        </p>
+        <div
+          class="destination-search-results"
+          id="destinationSearchResults"
+          aria-live="polite"
+        ></div>
+      </section>
+    </div>
+    <script src="../JavaScript/gallery.js"></script>
+    <script src="../JavaScript/device-viewer.js" defer></script>
+    <script src="../JavaScript/site-config.js"></script>
+    <script src="../JavaScript/site-features.js" defer></script>
+  </body>
+</html>
