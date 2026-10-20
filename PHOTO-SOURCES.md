@@ -10,3 +10,14 @@ The primary images for Mount Pulag, Batanes, Isla Gigantes, Chefchaouen, Vatican
 - **South Korea:** Lee Seunghyub, “A Seoul, South Korea landmark in a park,” Unsplash License. https://unsplash.com/photos/a-seoul-south-korea-landmark-in-a-park-XgnTPliFFxw
 
 Please verify the source and license before commercial or other public uses, and retain this file with the project.
+NORWAY
+https://unsplash.com/photos/northern-lights-over-snow-capped-mountian-LtnPejWDSAY
+
+https://unsplash.com/photos/aerial-view-of-city-during-night-time-DNMvqJ_kdCQ
+
+https://unsplash.com/photos/famous-tourist-attraction-hamnoy-fishing-village-on-lofoten-islands-norway-with-red-rorbu-houses-with-falling-snow-in-winter-on-sunrise-6M5qpHBGHtc
+
+https://unsplash.com/photos/green-aurora-borealis-over-snowy-mountains-aBl1K6oUHWo
+
+
+https://unsplash.com/photos/an-aerial-view-of-a-city-at-night-paNei2ik-8k

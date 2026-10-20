@@ -45,11 +45,6 @@
   document.body.appendChild(themeButton);
 
   // MUSIC CONTROL NOTES:
-  // - The music icon only opens/closes the control panel; it does not mute music.
-  // - We first attempt normal autoplay, then retry silently if browser policy blocks sound.
-  // - When autoplay was blocked, the first interaction elsewhere on the page enables audio.
-  //   This avoids forcing the visitor to press a separate “Unmute” button just to start music.
-  // - Browsers can still restrict audible autoplay; site code cannot override that browser policy.
   const backgroundMusic = document.createElement("audio");
   backgroundMusic.id = "elsewhereBackgroundMusic";
   backgroundMusic.loop = true;
